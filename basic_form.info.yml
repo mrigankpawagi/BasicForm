@@ -1,0 +1,6 @@
+name: BasicForm
+description: Module to display a basic form page in Drupal 8.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

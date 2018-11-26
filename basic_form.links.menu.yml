@@ -1,0 +1,7 @@
+basic_form.admin:
+  title: 'BasicForm'
+  description: 'Open BasicForm.'
+  parent: system.admin_config_development
+  route_name: basic_form.main
+  weight: 100
+  

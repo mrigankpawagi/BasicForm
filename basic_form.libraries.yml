@@ -1,0 +1,5 @@
+basicForm:
+  version: 1.x
+  css:
+    base:
+      css/basicForm.css: {}

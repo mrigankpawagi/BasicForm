@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); #basic-form {
+  background: linear-gradient(to top right, #3f51b5, #4caf50);
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+}
+#basic-form * {
+  transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+#name,
+#birthdate {
+  width: 100%;
+  border: 0;
+  border-bottom: 3px solid #999;
+  outline: 0;
+  color: #333;
+}
+#name:focus,
+#birthdate:focus,
+.error {
+  border-color: #e91e63!important;
+  box-shadow: 2px 2px 5px 1px #333;
+}
+.form-item-gender {
+  background-color: #fff;
+  display: block;
+  margin: 10px 0;
+  position: relative;
+}
+.form-item-gender label {
+  padding: 12px 30px;
+  width: calc(100% - 60px);
+  display: block!important;
+  text-align: left;
+  color: #3c454c;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 200ms ease-in;
+  overflow: hidden;
+  margin: 0!important;
+}
+.form-item-gender label:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: '';
+  background-color: #f44336;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
+  transform: translate(-50%, -50%) scale3d(1, 1, 1);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  z-index: -1;
+}
+.form-item-gender label:after {
+  width: 32px;
+  height: 32px;
+  content: '';
+  border: 2px solid #d1d7dc;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.form-item-gender input:checked ~ label {
+  color: #fff;
+}
+.form-item-gender input:checked ~ label:before {
+  -webkit-transform: translate(-50%, -50%) scale3d(200, 100, 1);
+  transform: translate(-50%, -50%) scale3d(200, 100, 1);
+  opacity: 1;
+}
+.form-item-gender input:checked ~ label:after {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+.form-item-gender input {
+  width: 32px;
+  height: 32px;
+  order: 1;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+}
+#submit {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #ffc107;
+}
+#submit:hover {
+  background: #ffc107;
+  color: #333;
+  letter-spacing: 5px;
+}
