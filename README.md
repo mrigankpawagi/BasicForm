@@ -1,5 +1,5 @@
 # BasicForm
-_A module to display a basic form page in Drupal 8, with the Messenger Serive_
+_A module to display a basic form page in Drupal 8, with the Messenger Service_
 _and validation._
 
 ## Conditions for Validation
